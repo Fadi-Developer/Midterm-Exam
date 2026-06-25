@@ -6,7 +6,6 @@ body {
   margin: 0;
 }
 
-/* Header style */
 .header {
   background-color: #3157c9;
   color: white;
@@ -23,7 +22,7 @@ body {
   text-decoration: none;
 }
 
-/* General section style */
+/* General Section */
 .section {
   background-color: white;
   padding: 30px;
@@ -32,7 +31,7 @@ body {
   border-radius: 12px;
 }
 
-/* Hero section */
+/* Hero */
 .hero img {
   width: 150px;
   border-radius: 50%;
@@ -47,160 +46,260 @@ body {
   color: #3157c9;
 }
 
-/* About Me Section - Class Selector */
-.about {
-  background-color: #f0fdf4;
-  border-color: #bbf7d0;
+.hero p {
+  font-size: 15px;
+  color: #555;
+  margin: 10px auto;
+  max-width: 500px;
 }
 
-/* About Me Title */
-.about h2 {
-  color: #166534;
+/* Social Links */
+.social-links {
+  margin-top: 15px;
 }
 
-/* Quote style inside About Me - Element Selector */
-blockquote {
+.social-links a {
+  display: inline-block;
+  margin: 5px;
   background-color: white;
-  color: #166534;
-  font-size: 16px;
-  padding: 15px;
-  margin: 20px auto 0 auto;
-  border: 1px solid #dcfce7;
-  border-radius: 8px;
-  max-width: 80%;
-}
-
-.skills {
-  background-color: #fffbeb;
-  border-color: #fde68a;
-}
-
-.skills h2 {
-  color: #b45309;
-}
-
-.skills ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.skills li {
-  font-weight: bold;
-  margin: 10px 0;
-  color: #102040;
-}
-/* تنسيق قسم المشاريع */
-.projects {
-  background-color: #faf5ff;
-  border-color: #e9d5ff;
-  padding: 30px 20px;
-}
-
-.projects h2 {
-  color: #6b21a8;
-  margin-bottom: 20px;
+  border: 1px solid #d9e2f3;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
   text-align: center;
 }
 
-.project-card {
-  background-color: white;
-  border: 1px solid #e9d5ff;
-  border-radius: 8px;
-  padding: 15px;
+.social-links a svg {
+  vertical-align: middle;
+}
+
+/* About */
+#about h2 {
+  font-size: 24px;
+  color: #102040;
+  border-bottom: 3px solid #3cb371;
+  display: inline-block;
+  padding-bottom: 5px;
   margin-bottom: 15px;
+}
+
+#about h2 svg {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+#about p {
+  font-size: 15px;
+  max-width: 550px;
+  margin: 10px auto;
+  color: #333;
+}
+
+#about strong {
+  color: #102040;
+  font-weight: bold;
+}
+
+#about mark {
+  background-color: #ffd966;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+#about blockquote {
+  background-color: #f0f4e8;
+  padding: 15px 15px 15px 45px;
+  margin: 20px auto;
+  border-radius: 8px;
+  color: #555;
+  font-style: italic;
+  max-width: 480px;
+  text-align: left;
+  position: relative;
+}
+
+#about blockquote::before {
+  content: "\201C\201C";
+  font-size: 26px;
+  color: #888;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+
+/* Skills */
+#skills h2 {
+  font-size: 24px;
+  color: #102040;
+  border-bottom: 3px solid #f0a500;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
   text-align: left;
 }
 
-.project-card h3 {
-  color: #102040;
+#skills ul li {
+  margin: 15px 0;
+}
+
+#skills ul li p {
   margin: 0 0 5px 0;
-  font-size: 18px;
-}
-
-.project-card p {
-  color: #4b5563;
-  margin: 0 0 10px 0;
-  font-size: 14px;
-}
-
-.project-card a {
-  color: #6b21a8;
-  text-decoration: underline;
   font-weight: bold;
-  font-size: 14px;
-}
-/* تنسيق قسم التواصل */
-.contact {
-  background-color: #fdf2f8;
-  border-color: #fbcfe8;
-  padding: 30px;
+  color: #3157c9;
+  font-size: 15px;
 }
 
-.contact h2 {
-  color: #be185d;
+#skills ul li p span {
+  color: #f0a500;
+  float: right;
+}
+
+.skill-bar {
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  height: 12px;
+}
+
+.skill-fill {
+  height: 12px;
+  background-color: #f0a500;
+  border-radius: 6px;
+}
+
+.html-fill {
+  width: 90%;
+}
+.css-fill {
+  width: 85%;
+}
+.git-fill {
+  width: 95%;
+}
+
+/* Projects */
+#projects h2 {
+  font-size: 24px;
+  color: #102040;
+  border-bottom: 3px solid #3157c9;
+  display: inline-block;
+  padding-bottom: 5px;
   margin-bottom: 20px;
 }
 
-.contact form {
-  max-width: 600px;
+#projects ul {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
-.contact label {
-  display: block;
-  text-align: right;
-  margin-bottom: 5px;
+#projects ul li {
+  background-color: #f4f7fb;
+  border: 1px solid #d9e2f3;
+  border-radius: 8px;
+  padding: 15px 15px 15px 45px;
+  margin: 10px 0;
+  position: relative;
+}
+
+#projects ul li::before {
+  content: "📄";
+  font-size: 18px;
+  position: absolute;
+  left: 12px;
+  top: 15px;
+}
+
+#projects ul li h3 {
+  font-size: 15px;
   color: #102040;
+  margin: 0 0 5px 0;
+}
+
+#projects ul li p {
+  color: #777;
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+#projects ul li a {
+  font-size: 13px;
+  color: #3157c9;
+  text-decoration: none;
   font-weight: bold;
 }
+/* Contact */
+#contact h2 {
+  font-size: 24px;
+  color: #102040;
+  border-bottom: 3px solid #e05555;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
 
-.contact input[type="text"],
-.contact input[type="email"],
-.contact textarea {
+#contact form {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#contact label {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  margin: 12px 0 4px 0;
+}
+
+#contact input {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #fbcfe8;
-  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid #d9e2f3;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f4f7fb;
   box-sizing: border-box;
-  background-color: white;
   color: #102040;
 }
 
-#name,
-#email {
-  width: 47%; /* تقليل النسبة لضمان ظهورهما بجانب بعضهما تماماً */
-  display: inline-block;
-  vertical-align: top;
-}
-
-.contact textarea {
-  display: block;
+#contact textarea {
   width: 100%;
+  padding: 10px;
+  border: 1px solid #d9e2f3;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f4f7fb;
+  box-sizing: border-box;
+  height: 100px;
+  color: #102040;
 }
 
-.contact input[type="submit"] {
-  display: inline-block;
-  background-color: #be185d;
+#contact button {
+  margin-top: 15px;
+  background-color: #e05555;
   color: white;
   border: none;
-  padding: 12px 35px;
-  border-radius: 6px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 15px;
   cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-}
-/* تنسيق الفوتر */
-footer {
-  background-color: #2563eb;
-  color: white;
-  text-align: center;
-  padding: 15px 10px;
-  font-size: 14px;
-  margin-top: 20px;
+  width: 100%;
 }
 
-footer p {
-  margin: 0;
+/* Footer */
+.footer {
+  background-color: #3157c9;
+  color: white;
+  padding: 15px;
+  font-size: 13px;
+  margin-top: 15px;
 }
